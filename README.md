@@ -7,7 +7,9 @@
 ファイルを所定の場所に配置し、ダブルクリックするだけで、RまたはPythonプログラミングの研修でありがちな実習環境が整います。
 
 [![Python環境を構築する様子](https://img.youtube.com/vi/_fO-Mbb8vnU/0.jpg)](https://www.youtube.com/watch?v=_fO-Mbb8vnU)
+
 https://www.youtube.com/watch?v=_fO-Mbb8vnU
+
 
 ## バリエーション
 
@@ -71,7 +73,9 @@ https://www.youtube.com/watch?v=_fO-Mbb8vnU
 
 
 [![R環境を構築する様子](https://img.youtube.com/vi/WRM2OOzjCZE/0.jpg)](https://www.youtube.com/watch?v=WRM2OOzjCZE)
+
 https://www.youtube.com/watch?v=WRM2OOzjCZE
+
 
 ## 要件
 
