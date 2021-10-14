@@ -8,18 +8,19 @@ Set-WinDefaultInputMethodOverride -InputTip "0411:00000411"
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-Invoke-Expression -Command "echo A | choco install googlechrome"
-
 $program = "choco"
-
-$argument = "install vscode"
-
-Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
-
-$argument = "install git"
+$argument = "install -y googlechrome"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
-$argument = "install git-lfs"
+$argument = "install -y vscode"
+
+Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
+
+$argument = "install -y git"
+
+Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
+
+$argument = "install -y git-lfs"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
