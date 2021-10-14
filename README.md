@@ -6,6 +6,8 @@
 
 `.wsb` ファイルをダウンロードし、ダブルクリックするだけで、RまたはPythonプログラミングの研修でありがちな実習環境が整います。
 
+Windows Package Manager (`winget`) 版と、chocolatey (`choco`) 版を作成しました。
+
 [![Python環境を構築する様子](https://img.youtube.com/vi/_fO-Mbb8vnU/0.jpg)](https://www.youtube.com/watch?v=_fO-Mbb8vnU)
 
 https://www.youtube.com/watch?v=_fO-Mbb8vnU
@@ -17,7 +19,7 @@ https://www.youtube.com/watch?v=_fO-Mbb8vnU
 
 以下のソフトウェアをインストールします。
 
-* Windows Package Manager (winget)
+* Windows Package Manager (winget) / chocolatey (choco)
 * Visual Studio Code
 * Google Chrome
 * Git
@@ -28,7 +30,7 @@ https://www.youtube.com/watch?v=_fO-Mbb8vnU
 
 以下のソフトウェアをインストールします。
 
-* Windows Package Manager (winget)
+* Windows Package Manager (winget) / chocolatey (choco)
 * Visual Studio Code
 * Google Chrome
 * Git
@@ -63,13 +65,29 @@ https://www.youtube.com/watch?v=_fO-Mbb8vnU
 
 以下のソフトウェアをインストールします。
 
-* Windows Package Manager (winget)
+* Windows Package Manager (winget) / chocolatey (choco)
 * Visual Studio Code
 * Google Chrome
 * Git
 * GitHub LFS
 * R
 * RStudio
+
+
+### VSCode_webapp.wsb (chocolatey版のみ)
+
+以下のソフトウェアをインストールします。
+
+* chocolatey (choco)
+* Visual Studio Code
+* Google Chrome
+* Git
+* GitHub LFS
+* OpenJDK
+* Apache HTTP Server
+* Apache Tomcat
+* PostgreSQL
+* pgAdmin4
 
 
 [![R環境を構築する様子](https://img.youtube.com/vi/WRM2OOzjCZE/0.jpg)](https://www.youtube.com/watch?v=WRM2OOzjCZE)
