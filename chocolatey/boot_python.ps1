@@ -23,13 +23,6 @@ $argument = "install -y python"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
-# 環境変数の反映
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
-
-$argument = "install -y pip"
-
-Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
-
 $argument = "install -y vscode-python"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
@@ -46,7 +39,7 @@ Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
 
-$program = "pip"
+$program = "pip3"
 $argument = "install numpy pandas matplotlib seaborn scikit-learn notebook jupyterlab chromedriver-binary-auto selenium imbalanced-learn category-encoders autopep8 jupyter-contrib-nbextensions pandas-profiling sweetviz apache-log-parser pycgettb pandastable japanize-matplotlib jaconv openpyxl Flask"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
