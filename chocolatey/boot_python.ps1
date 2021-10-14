@@ -23,6 +23,9 @@ $argument = "install -y python"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
+# 環境変数の反映
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
 $argument = "install -y pip"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
