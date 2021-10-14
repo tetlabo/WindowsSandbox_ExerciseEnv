@@ -19,7 +19,7 @@ $argument = "install -y vscode"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
-$argument = "install -y python"
+$argument = "install -y python -Version 3.10.0"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
