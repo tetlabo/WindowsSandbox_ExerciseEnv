@@ -35,14 +35,14 @@ $argument = "install -y tomcat"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
+$argument = "install -y gradle"
+
+Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
+
 $argument = "install -y apache-httpd"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
 $argument = "install -y postgresql"
-
-Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
-
-$argument = "install -y pgadmin4"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
