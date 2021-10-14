@@ -1,4 +1,4 @@
-<Configuration Name="ExerciseEnv_VSCode_Webapp" CreatedAt="2021-10-14 12:06:55 +09:00">
+<Configuration Name="ExerciseEnv_VSCode_Webapp" CreatedAt="2021-10-14 13:44:55 +09:00">
   <VGpu>Enable</VGpu>
   <Networking>Default</Networking>
   <LogonCommand>

@@ -1,3 +1,5 @@
+# Windows Sandboxを使い、プログラミング研修でありがちな環境を整える設定ファイル
+
 Set-WinSystemLocale -SystemLocale ja-JP
 Set-WinHomeLocation -GeoId 0x7A
 Set-WinUserLanguageList ja-JP -Force
