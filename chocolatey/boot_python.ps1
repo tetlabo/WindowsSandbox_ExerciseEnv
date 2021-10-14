@@ -23,6 +23,10 @@ $argument = "install -y python"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
+$argument = "install -y pip"
+
+Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
+
 $argument = "install -y vscode-python"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
