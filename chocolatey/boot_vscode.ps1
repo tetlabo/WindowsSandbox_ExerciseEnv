@@ -8,10 +8,9 @@ Set-WinDefaultInputMethodOverride -InputTip "0411:00000411"
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-$program = "choco"
-$argument = "install googlechrome"
+Invoke-Expression -Command "echo A | choco install googlechrome"
 
-Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
+$program = "choco"
 
 $argument = "install vscode"
 
