@@ -43,6 +43,6 @@ $argument = "install -y apache-httpd"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
-$argument = "install -y postgresql --params '/Password:postgres'"
+$argument = "install -y postgresql --params '/Password:postgres' --params-global"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
