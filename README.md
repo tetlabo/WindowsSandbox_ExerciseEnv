@@ -88,7 +88,7 @@ https://www.youtube.com/watch?v=_fO-Mbb8vnU
 
 ### VSCode_webapp.wsb (chocolatey版のみ)
 
-以下のソフトウェアをインストールします。なお、PostgreSQLのユーザー名とパスワードは `postgres` に背呈しています。
+以下のソフトウェアをインストールします。なお、PostgreSQLのユーザー名とパスワードは `postgres` に設定しています。
 
 * chocolatey (choco)
 * Visual Studio Code
