@@ -1,7 +1,7 @@
 # Windows Sandboxを使い、プログラミング研修でありがちな環境を整える設定ファイル群
 
 <p align="right">
-<a href="https://mana.bi/">田中 健太</a>
+<a href="https://mana.bi/">タナカケンタ</a>
 </p>
 
 `.wsb` ファイルをダウンロードし、ダブルクリックするだけで、RまたはPythonプログラミングの研修でありがちな実習環境が整います。
@@ -11,6 +11,13 @@ Windows Package Manager (`winget`) 版と、chocolatey (`choco`) 版を作成し
 [![Python環境を構築する様子](https://img.youtube.com/vi/_fO-Mbb8vnU/0.jpg)](https://www.youtube.com/watch?v=_fO-Mbb8vnU)
 
 https://www.youtube.com/watch?v=_fO-Mbb8vnU
+
+
+## 使用法
+
+このリポジトリから、以下で紹介するバリエーションのうち、要件に合うものを選び、**`.wsb` ファイルのみ** ダウンロードします。そして、ダブルクリックすると、Windows Sandboxが起動し、自動的にGitHubから設定スクリプト (`*.ps1`) をダウンロードし、実行します。
+
+セットアップが完了するまで数分かかりますが、放っておけば、プログラミング研修でありがちな環境が用意できます。
 
 
 ## バリエーション
@@ -40,7 +47,7 @@ https://www.youtube.com/watch?v=_fO-Mbb8vnU
 * Google Chrome
 * Git
 * GitHub LFS
-* Python 3
+* Python 3 (2021-10-15現在、3.9.x)
 * 以下のPythonライブラリ (研修で使いがちなもの)
     * numpy
 	* pandas
@@ -81,7 +88,7 @@ https://www.youtube.com/watch?v=_fO-Mbb8vnU
 
 ### VSCode_webapp.wsb (chocolatey版のみ)
 
-以下のソフトウェアをインストールします。
+以下のソフトウェアをインストールします。なお、PostgreSQLのユーザー名とパスワードは `postgres` に背呈しています。
 
 * chocolatey (choco)
 * Visual Studio Code
@@ -92,7 +99,6 @@ https://www.youtube.com/watch?v=_fO-Mbb8vnU
 * Apache HTTP Server
 * Apache Tomcat
 * PostgreSQL
-* pgAdmin4
 
 
 [![R環境を構築する様子](https://img.youtube.com/vi/WRM2OOzjCZE/0.jpg)](https://www.youtube.com/watch?v=WRM2OOzjCZE)
@@ -105,6 +111,8 @@ https://www.youtube.com/watch?v=WRM2OOzjCZE
 ### Windows Sandbox
 
 実行には、Windows 10において、Windows Sandboxが有効になっている必要があります。Windows Sandboxの有効化については、[「Windowsサンドボックス」の使い方。初めてのアプリを安全な環境で試せる！【Windows Tips】 | できるネット](https://dekiru.net/article/18773/)などを参考にしてください。
+
+何やら[Windows 10 Homeでも有効化できるとかナントカ...](https://www.tenforums.com/tutorials/131437-enable-windows-sandbox-feature-windows-10-home-edition.html)
 
 
 ### PCのスペック
