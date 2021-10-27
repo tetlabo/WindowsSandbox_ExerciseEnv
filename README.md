@@ -101,10 +101,29 @@ https://www.youtube.com/watch?v=_fO-Mbb8vnU
 * PostgreSQL
 
 
+### jamovi.wsb
+
+chocolateyから、オープンソース・GUIの統計パッケージ[jamovi](https://www.jamovi.org/)をインストールします。こちらは、以下のソフトウェアも合わせてインストールします。メモリサイズは4GBに設定しています。
+
+* chocolatey (choco)
+* Visual Studio Code
+* Google Chrome
+* Git
+* GitHub LFS
+
+
+### jamovi_only.wsb
+
+オープンソース・GUIの統計パッケージ[jamovi](https://www.jamovi.org/)をインストールします。こちらは、jamoviのインストーラだけをダウンロードし、インストールします。メモリサイズは4GBに設定しています。
+
+
+---
+
 [![R環境を構築する様子](https://img.youtube.com/vi/WRM2OOzjCZE/0.jpg)](https://www.youtube.com/watch?v=WRM2OOzjCZE)
 
 https://www.youtube.com/watch?v=WRM2OOzjCZE
 
+---
 
 ## 要件
 

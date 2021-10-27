@@ -1,0 +1,9 @@
+<Configuration Name="ExerciseEnv_jamvoi" CreatedAt="2021-10-27 12:39:05 +09:00">
+  <VGpu>Enable</VGpu>
+  <Networking>Default</Networking>
+  <LogonCommand>
+    <Command>C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -executionpolicy unrestricted -command "start powershell {-Command (new-object Net.WebClient).DownloadString('https://raw.githubusercontent.com/ltl-manabi/WindowsSandbox_ExerciseEnv/main/jamovi/boot_jamovi.ps1') | iex}"</Command>
+  </LogonCommand>
+  <AudioInput>Disable</AudioInput>
+  <MemoryInMB>4096</MemoryInMB>
+</Configuration>
