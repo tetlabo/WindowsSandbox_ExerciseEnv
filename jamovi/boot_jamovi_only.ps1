@@ -13,10 +13,10 @@ Set-WinDefaultInputMethodOverride -InputTip "0411:00000411"
 
 
 $ProgressPreference = "SilentlyContinue"
-Invoke-WebRequest -Uri "https://www.jamovi.org/downloads/jamovi-2.2.2.0-win64.exe" -OutFile "C:\users\WDAGUtilityAccount\Downloads\jamovi-2.2.2.0-win64.exe"
+Invoke-WebRequest -Uri "https://www.jamovi.org/downloads/jamovi-1.6.23.0-win64.exe" -OutFile "C:\users\WDAGUtilityAccount\Downloads\jamovi-1.6.23.0-win64.exe"
 
 
-$program = "C:\users\WDAGUtilityAccount\Downloads\jamovi-2.2.2.0-win64.exe"
+$program = "C:\users\WDAGUtilityAccount\Downloads\jamovi-1.6.23.0-win64.exe"
 $argument = "/S"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow

@@ -27,6 +27,6 @@ $argument = "install -y git-lfs"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
-$argument = "install -y jamovi.install --pre"
+$argument = "install -y jamovi.install"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
