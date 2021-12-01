@@ -32,7 +32,7 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 
 
 $program = "pip"
-$argument = "install numpy pandas matplotlib seaborn scikit-learn notebook jupyterlab chromedriver-binary-auto selenium imbalanced-learn category-encoders autopep8 jupyter-contrib-nbextensions pandas-profiling sweetviz apache-log-parser pycgettb pandastable japanize-matplotlib jaconv openpyxl Flask"
+$argument = "install numpy pandas matplotlib seaborn scikit-learn notebook jupyterlab chromedriver-binary-auto selenium imbalanced-learn category-encoders autopep8 jupyter-contrib-nbextensions sweetviz apache-log-parser pycgettb pandastable japanize-matplotlib jaconv openpyxl Flask"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
