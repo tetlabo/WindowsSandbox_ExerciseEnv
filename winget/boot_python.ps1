@@ -23,7 +23,7 @@ Invoke-Expression -Command "echo Y | winget install --id Google.Chrome"
 
 
 $program = "winget"
-$argument = "install --id Python.Python.3"
+$argument = "install --id Python.Python.3 -v 3.9.2"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
