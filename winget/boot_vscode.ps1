@@ -10,6 +10,8 @@ Set-WinDefaultInputMethodOverride -InputTip "0411:00000411"
 
 Install-Package -Force "winget"
 
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
 Invoke-Expression -Command "echo Y | winget install --id Google.Chrome"
 
 
