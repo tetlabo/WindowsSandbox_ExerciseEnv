@@ -8,9 +8,11 @@ Set-WinUILanguageOverride -Language ja-JP
 Set-WinCultureFromLanguageListOptOut -OptOut $False
 Set-WinDefaultInputMethodOverride -InputTip "0411:00000411"
 
-Install-Package -Force "winget"
+Set-ExecutionPolicy Bypass -Scope Process -Force
 
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+Add-AppxPackage -Path https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx
+Add-AppxPackage -Path https://github.com/microsoft/winget-cli/releases/download/v1.1.12653/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+
 
 Invoke-Expression -Command "echo Y | winget install --id Google.Chrome"
 
