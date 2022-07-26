@@ -11,8 +11,8 @@ Set-WinDefaultInputMethodOverride -InputTip "0411:00000411"
 Set-ExecutionPolicy Bypass -Scope Process -Force
 
 Add-AppxPackage -Path https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx
-Add-AppxPackage -Path https://github.com/microsoft/winget-cli/releases/download/v1.4.2011-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
 Add-AppxPackage -Path https://raw.githubusercontent.com/ltl-manabi/WindowsSandbox_ExerciseEnv/main/winget/Microsoft.UI.Xaml.2.7.appx
+Add-AppxPackage -Path https://github.com/microsoft/winget-cli/releases/download/v1.4.2011-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
 
 Invoke-Expression -Command "echo Y | winget install --id Google.Chrome"
 
