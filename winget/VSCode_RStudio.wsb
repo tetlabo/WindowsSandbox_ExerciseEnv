@@ -2,7 +2,7 @@
   <VGpu>Enable</VGpu>
   <Networking>Default</Networking>
   <LogonCommand>
-    <Command>C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -executionpolicy unrestricted -command "start powershell {(new-object Net.WebClient).DownloadString('https://raw.githubusercontent.com/ltl-manabi/WindowsSandbox_ExerciseEnv/main/winget/boot_rstudio.ps1') | iex}"</Command>
+    <Command>C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -executionpolicy unrestricted -command "start powershell {(new-object Net.WebClient).DownloadString('https://raw.githubusercontent.com/tetlabo/WindowsSandbox_ExerciseEnv/main/winget/boot_rstudio.ps1') | iex}"</Command>
   </LogonCommand>
   <AudioInput>Disable</AudioInput>
   <MemoryInMB>8192</MemoryInMB>
