@@ -14,14 +14,14 @@ Add-AppxPackage -Path https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx
 Add-AppxPackage -Path https://raw.githubusercontent.com/tetlabo/WindowsSandbox_ExerciseEnv/main/winget/Microsoft.UI.Xaml.2.7.appx
 Add-AppxPackage -Path https://github.com/microsoft/winget-cli/releases/download/v1.3.2691/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
 
-#Invoke-Expression -Command "echo Y | winget install \`"App Installer\`" -s msstore"
+Invoke-Expression -Command "echo Y | winget install \`"App Installer\`" -s msstore"
 
-Invoke-Expression -Command "echo Y | winget install --id Google.Chrome"
+#Invoke-Expression -Command "echo Y | winget install --id Google.Chrome"
 
-#$program = "winget"
-#$argument = "install --id Google.Chrome"
+$program = "winget"
+$argument = "install --id Google.Chrome"
 
-#Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
+Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
 
 $program = "winget"
