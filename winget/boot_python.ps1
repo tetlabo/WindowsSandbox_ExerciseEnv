@@ -23,14 +23,14 @@ $argument = "install --id Google.Chrome --accept-package-agreements --accept-sou
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
+#$program = "winget"
+#$argument = "install --id Microsoft.VisualStudio.2022.BuildTools --accept-package-agreements --accept-source-agreements"
+
+#Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
+
+
 $program = "winget"
-$argument = "install --id Microsoft.VisualStudio.2022.BuildTools --accept-package-agreements --accept-source-agreements"
-
-Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
-
-
-$program = "winget"
-$argument = "install --id Python.Python.3.11 --accept-package-agreements --accept-source-agreements"
+$argument = "install --id Python.Python.3.10 --accept-package-agreements --accept-source-agreements"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
