@@ -25,7 +25,12 @@ Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
 
 $program = "winget"
-$argument = "install --id rproject.r --accept-package-agreements --accept-source-agreements"
+$argument = "install --id RProject.R --accept-package-agreements --accept-source-agreements"
+
+Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
+
+$program = "winget"
+$argument = "install --id RProject.Rtools --accept-package-agreements --accept-source-agreements"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
