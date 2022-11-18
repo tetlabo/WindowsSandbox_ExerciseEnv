@@ -16,12 +16,12 @@ Add-AppxPackage -Path https://github.com/microsoft/winget-cli/releases/download/
 
 #Invoke-Expression -Command "echo Y | winget install \`"App Installer\`" -s msstore"
 
-#Invoke-Expression -Command "echo Y | winget install --id Google.Chrome"
+Invoke-Expression -Command "echo Y | winget install --id Google.Chrome"
 
-$program = "winget"
-$argument = "install --id Google.Chrome"
+#$program = "winget"
+#$argument = "install --id Google.Chrome"
 
-Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
+#Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
 $program = "winget"
 $argument = "install --id Python.Python.3"
