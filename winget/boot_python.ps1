@@ -49,6 +49,8 @@ $argument = "install --id Microsoft.Git --accept-package-agreements --accept-sou
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
 
 $program = "winget"
 $argument = "install --id GitHub.GitLFS --accept-package-agreements --accept-source-agreements"
