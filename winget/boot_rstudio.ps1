@@ -45,7 +45,7 @@ Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
 
 $program = "winget"
-$argument = "install --id rstudio.rstudio.opensource --accept-package-agreements --accept-source-agreements"
+$argument = "install --id posit.rstudio --accept-package-agreements --accept-source-agreements"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
