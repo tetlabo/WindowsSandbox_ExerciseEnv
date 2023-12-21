@@ -10,9 +10,18 @@ Set-WinDefaultInputMethodOverride -InputTip "0411:00000411"
 
 Set-ExecutionPolicy Bypass -Scope Process -Force
 
-Add-AppxPackage -Path https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx
-Add-AppxPackage -Path https://raw.githubusercontent.com/tetlabo/WindowsSandbox_ExerciseEnv/main/winget/Microsoft.UI.Xaml.2.7.appx
-Add-AppxPackage -Path https://github.com/microsoft/winget-cli/releases/download/v1.4.3132-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -Confirm:$false
+$progressPreference = 'silentlyContinue'
+Write-Information "Downloading WinGet and its dependencies..."
+Invoke-WebRequest -Uri https://aka.ms/getwinget -OutFile Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+Invoke-WebRequest -Uri https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx -OutFile Microsoft.VCLibs.x64.14.00.Desktop.appx
+Invoke-WebRequest -Uri https://github.com/microsoft/microsoft-ui-xaml/releases/download/v2.7.3/Microsoft.UI.Xaml.2.7.x64.appx -OutFile Microsoft.UI.Xaml.2.7.x64.appx
+Add-AppxPackage Microsoft.VCLibs.x64.14.00.Desktop.appx
+Add-AppxPackage Microsoft.UI.Xaml.2.7.x64.appx
+Add-AppxPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+
+# Add-AppxPackage -Path https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx
+# Add-AppxPackage -Path https://raw.githubusercontent.com/tetlabo/WindowsSandbox_ExerciseEnv/main/winget/Microsoft.UI.Xaml.2.7.appx
+# Add-AppxPackage -Path https://github.com/microsoft/winget-cli/releases/download/v1.4.3132-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -Confirm:$false
 
 #Invoke-Expression -Command "echo Y | winget install \`"App Installer\`" -s msstore"
 
