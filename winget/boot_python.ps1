@@ -39,7 +39,7 @@ Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
 
 $program = "winget"
-$argument = "install --id Python.Python.3.11 --accept-package-agreements --accept-source-agreements"
+$argument = "install --id Python.Python.3.12 --accept-package-agreements --accept-source-agreements"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
@@ -54,7 +54,7 @@ Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
 
 $program = "winget"
-$argument = "install --id Microsoft.Git --accept-package-agreements --accept-source-agreements"
+$argument = "install --id Git.Git --accept-package-agreements --accept-source-agreements"
 
 Start-Process -FilePath $program -ArgumentList $argument -NoNewWindow -Wait
 
